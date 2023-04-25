@@ -9,5 +9,5 @@ import java.util.Optional;
 
 @Repository
 public interface ResultRedisRepository extends CrudRepository<ResultHistory, Long> {
-    Optional<List<ResultHistory>> findByIpAsc(String ip);
+    Optional<List<ResultHistory>> findByIp(String ip);
 }
